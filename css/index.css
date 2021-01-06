@@ -1,0 +1,222 @@
+:root{
+    --color-negro:rgb(15, 14, 14);
+    --color-verder: rgb(4, 153, 71);
+}
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: monospace;
+    
+}
+body{
+    font-size: 20px;
+    position: relative !important;
+}
+.container{
+    width: 90%;
+    background-color:var(--color-verder);
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+.respuesta{
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.699);
+}
+
+.frm{
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    background-color:rgb(47, 120, 255);
+}
+form{
+    background-color: rgb(255, 196, 0);
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.title{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+}
+label{
+    width: 30% !important;
+    display: inline-block !important;
+    height: 30px;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+
+}
+input[type="text"]{
+    text-align: center;
+    width: 69%;
+    box-sizing: border-box;
+    padding: 0;
+    outline: none;
+    display: inline-block;
+    height: 30px;
+    font-size: 1.4rem;
+}
+
+.sectionfrm{
+    
+    width: 70% !important;
+    margin: auto;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+input[type="submit"]{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border:1px solid rgb(255, 196, 0);
+    background-color: white;
+    transition: .5s linear;
+    float: left;
+    outline: none;
+}
+::placeholder{
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+.error{
+    color: rgb(202, 41, 1);
+    text-align: center;
+    font-weight: bold;
+
+}
+.exito{
+    color: rgb(0, 204, 17);
+    text-align: center;
+    font-weight: bold;
+}
+
+/**principal*/
+main{
+    padding-top: 40px;
+    min-height: 600px;
+    width: 100%;
+    position: relative;
+}
+.title2{
+    font-size: 3rem !important;
+    margin-top: 0;
+    color: black;
+    margin-bottom: 50px;
+}
+main section{
+    width: 60%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+main section p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.lettering{
+    background-image: url(../img/lettering.png);
+    height: 250px;
+    width: 90%;
+    margin :auto;
+    background-position: center center;
+    background-size: cover;
+}
+
+#formbtn:hover {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: 1px solid rgb(47, 120, 255);
+    background-color: rgb(47, 120, 255);
+}
+
+th{
+    background-color: rgb(47, 120, 255);
+    color: white; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+tbody tr{
+    
+    border-bottom: 2px solid rgb(255, 196, 0);
+}
+th:last-of-type{
+    width: 10%;
+}
+.accion{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.accion button{
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+.accion button:hover{
+    cursor: pointer;
+}
+i{
+    font-size: 1.5rem;
+}
+.delete{
+    color: red;
+}
+.update{
+    color: rgb(0, 12, 179);
+}
+
+#modal {
+    
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+  }
+  #modal p {
+    width: 60%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+ }

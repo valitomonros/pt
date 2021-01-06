@@ -1,0 +1,37 @@
+.nav{
+    background-color: rgb(248, 99, 0);
+    width: 100%;
+}
+
+
+.nav >ul{
+    width: 40%;
+    margin-left: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    box-sizing: border-box;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+li{
+    padding: 10px 5px;
+    margin: 5px 0;
+    transition: .4s linear;
+}
+li:hover >a{
+
+
+    color: rgb(248, 99, 0);
+}
+li:hover{
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.884);
+    cursor: pointer;
+}
+.ocultar{
+    display: none;
+}
